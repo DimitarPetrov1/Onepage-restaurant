@@ -23,13 +23,14 @@
    <div class="container">
 
       <header>
-         <nav>
-            <ul class="nav-top">
-               <li><a href="#">menu</a></li>
-               <li id="locationDiv"><a href="#">loactions</a></li>
+         <nav>               
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id='menuBtn'><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            <ul class="nav-top nav-mobile">
+               <li><a href="#" onclick="scrollToLocation('.menu-group-food')">menu</a></li>
+               <li id="locationDiv"><a href="#" onclick="scrollToLocation('.locations-group')">locations</a></li>
                <li class="logo-main"><a href="#">EL RESTORANTE</a></li>
-               <li><a href="#">reservations</a></li>
-               <li><a href="#">delivery</a></li>
+               <li><a href="#" onclick="scrollToLocation('.reservations')">reservations</a></li>
+               <li><a href="#" onclick="scrollToLocation('.delivery-group')" >delivery</a></li>
             </ul>
          </nav>
          <!-- Intro -->
@@ -45,29 +46,29 @@
          <h3>Snacks & Salads</h3>
          <ul class="menu-items">
             <li>
-               <h4>Snack & salad</h4>
-               <p>Description</p>
+               <h4>CHIRASHI  DONBURI</h4>
+               <p>chopped egg, ikura, shiso soy</p>
                <small>$10</small>
             </li>
             <li>
-               <h4>Snack & salad</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>AVOCADO  DONBURI</h4>
+               <p>chopped egg, shiso soy</p>
+               <small>$12</small>
             </li>
             <li>
-               <h4>Snack & salad</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>TUNA BELLY & SHISO TT</h4>
+               <p>green mango, chilli relish</p>
+               <small>$8</small>
             </li>
             <li>
-               <h4>Snack & salad</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>RARE BREED BEEF  TATAKI</h4>
+               <p>truffle ponzu, wild herbs</p>
+               <small>$14</small>
             </li>
             <li>
-               <h4>Snack & salad</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>SLICED YELLOWTAIL</h4>
+               <p>wasabi leaf & apple</p>
+               <small>$11</small>
             </li>
          </ul>
 
@@ -75,100 +76,84 @@
          <h3>Burgers</h3>
          <ul class="menu-items">
             <li>
-               <h4>Burger</h4>
-               <p>Description</p>
+               <h4>Lobster & Shrimp Burger</h4>
+               <p>Pan-seared lobster and king shrimp patty,  vegetable escabeche, herb aïoli, frisée</p>
+               <small>$15</small>
+            </li>
+            <li>
+               <h4>Hell’s Kitchen Burger</h4>
+               <p>Mozzarella cheese, roasted jalapeños, avocado,  roasted tomatoes, jalapeño aïoli</p>
+               <small>$11</small>
+            </li>
+            <li>
+               <h4>American Burger</h4>
+               <p>American cheese, tomato, pickles, red onion,  burger relish, butter lettuce</p>
+               <small>$20</small>
+            </li>
+            <li>
+               <h4>Forest Burger</h4>
+               <p>Gruyère cheese, sauté mushrooms,  fried Arlington White egg, cep mayonnaise, rocket</p>
+               <small>$14</small>
+            </li>
+            <li>
+               <h4>Blue Cheese Burger</h4>
+               <p>Cashel Blue cheese, balsamic glazed onions, crispy onion ring, blue-cheese dressing, frisée, butter lettuce</p>
+               <small>$31</small>
+            </li>
+            <li>
+               <h4>Portobello Burger</h4>
+               <p>Roasted Portobello mushroom, Gouda cheese,  Boursin cheese, shaved vegetables, fine herb aïoli</p>
+               <small>$23</small>
+            </li>
+            <li>
+               <h4>Cheeky Dawg</h4>
+               <p>Heritage beef hot dog, braised ox cheek, horseradish, house pickles, mustard cress</p>
                <small>$10</small>
             </li>
             <li>
-               <h4>Burger</h4>
-               <p>Description</p>
+               <h4>Chipotle Dawg</h4>
+               <p>Heritage beef hot dog, Cheddar cheese, pepper relish, chipotle ketchup, avocado mousse, jalapeños</p>
                <small>$10</small>
             </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Burger</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-
          </ul>
 
          <!-- Main Courses -->
          <h3>Main courses</h3>
          <ul class="menu-items">
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
+               <h4>DRY AGED CHAR SIU PORK CHOP</h4>
+               <p>nashi pear, crackling</p>
                <small>$10</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>WEEPING TIGER</h4>
+               <p>rare breed dry aged 250g rib eye, coriander, lime</p>
+               <small>$40</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>SPICED HERDWICK LAMB CHOPS</h4>
+               <p>chilli sauce, tofu cream</p>
+               <small>$45</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>1KG RARE BREED T-BONE</h4>
+               <p>smoked bone marrow & black garlic sauce</p>
+               <small>$100</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>PRESSED PORK BELLY SKEWERS</h4>
+               <p>nikka whisky, yuzu mustard</p>
+               <small>$120</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>ENGLISH WAGYU SIRLOIN </h4>
+               <p>170g steak, ponzu & smoked olive oil </p>
+               <small>$50</small>
             </li>
             <li>
-               <h4>Juicy stake</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>DAY BOAT BBQ MACKEREL</h4>
+               <p>black vinegar, smoked olive oil</p>
+               <small>$30</small>
             </li>
          </ul>
       </section>
@@ -178,64 +163,44 @@
          <h3>Drinks</h3>
          <ul class="menu-items">
             <li>
-               <h4>Drink</h4>
-               <p>Description</p>
+               <h4>LUCKY DEGRONI</h4>
+               <p>gin, vermouth, bitters</p>
+               <small>$11</small>
+            </li>
+            <li>
+               <h4>WHITE GEISHA</h4>
+               <p>grey goose vodka, homemade sake cordial, yuzu, egg white</p>
+               <small>$8</small>
+            </li>
+            <li>
+               <h4>SINGAPORE SLING</h4>
+               <p>bombay sapphire, benedictine, cherry brandy, cointreau, grenadine, pineapple & lime juice, served on draft</p>
+               <small>$14</small>
+            </li>
+            <li>
+               <h4>URESHII</h4>
+               <p>haku vodka, sake, lychee, rose, smoked sea salt</p>
                <small>$10</small>
             </li>
             <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>POLYNESIAN PUNCH</h4>
+               <p>bacardi carta negra, bacardi spiced, koko kanu, coconut, mango, pineapple, lime, angostura bitters</p>
+               <small>$7</small>
             </li>
             <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>SHISO SMASH</h4>
+               <p>roku gin, shiso leaves, lemon</p>
+               <small>$8</small>
             </li>
             <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>CHI</h4>
+               <p>grey goose l’vanille, homemade ‘coffee shu’, cinnamon, espresso</p>
+               <small>$12</small>
             </li>
             <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
-            </li>
-            <li>
-               <h4>Drink</h4>
-               <p>Description</p>
-               <small>$10</small>
+               <h4>BARREL AGED OLD FASHIONED</h4>
+               <p>our house blend of whiskies, bitters, sugar</p>
+               <small>$18</small>
             </li>
          </ul>
       </section>
@@ -308,7 +273,7 @@
       <section class="reservations">
          <h2>Make a reservation</h2>
          <p>A reservation is required for a group of 6 and more, please fill in the form below</p>
-         <a class="btn">Reservaton</a>
+         <a class="btn" id="reservationButton">Reservaton</a>
 
          <div class="reservation-form">
             <img src="img/svg/x.svg" alt="Close" id="closeBtn">
@@ -329,7 +294,7 @@
             <input type="submit" class="btn" id="submitBtn">
          </div>
 
-         <p>Alternatively your can contact the specific <a href="#locationDiv">location</a> via phone</p>
+         <p>Alternatively your can contact the specific <a href="#locationDiv" onclick="scrollToLocation('.locations-group')">location</a> via phone</p>
       </section>
       <!-- Delivery -->
       <section class="delivery">

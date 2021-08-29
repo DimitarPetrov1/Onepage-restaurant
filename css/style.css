@@ -33,6 +33,7 @@ a {
 }
 
 header {
+  position: relative;
   background-image: url("../img/headerpic.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,6 +83,19 @@ header {
   text-transform: uppercase;
 }
 
+#menuBtn {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  stroke: #fff;
+  padding: 10px;
+  z-index: 900;
+  top: 0;
+  right: 0;
+}
+
 .intro {
   position: absolute;
   text-align: center;
@@ -109,7 +123,8 @@ header {
 
 .menu-group-food h3 {
   text-align: center;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: bold;
   margin-bottom: 3rem;
 }
 
@@ -139,6 +154,10 @@ header {
 
 .menu-items:last-child {
   border-bottom: none;
+}
+
+.menu-items h4 {
+  text-transform: uppercase;
 }
 
 .menu-items li {
@@ -178,7 +197,8 @@ header {
 
 .menu-group-drinks h3 {
   text-align: center;
-  font-weight: 300;
+  font-weight: bold;
+  font-size: 1.4rem;
   margin-bottom: 3rem;
 }
 
@@ -292,6 +312,7 @@ header {
 }
 
 .reservation-form {
+  visibility: hidden;
   position: absolute;
   width: 50%;
   padding: 2rem 3rem;
@@ -371,6 +392,69 @@ footer {
   padding: 1rem 0;
 }
 
+@media screen and (max-width: 900px) {
+  .logo-main {
+    display: none;
+  }
+  #menuBtn {
+    visibility: visible;
+    width: 50px;
+    height: 50px;
+  }
+  .nav-mobile {
+    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .nav-mobile li {
+    margin-bottom: 1rem;
+  }
+  header,
+  .menu-group-food,
+  .menu-group-drinks,
+  .locations-group,
+  .reservations,
+  .delivery,
+  .footer-social,
+  .footer-normal {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .intro p {
+    width: 100%;
+  }
+  .menu-items li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservation-form {
+    width: 90%;
+  }
+  .imgsep {
+    height: 60vh;
+  }
+}
+
 @media screen and (max-width: 400px) {
   header,
   .menu-group-food,
@@ -411,43 +495,6 @@ footer {
   }
   .imgsep {
     height: 40vh;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  header,
-  .menu-group-food,
-  .menu-group-drinks,
-  .locations-group,
-  .reservations,
-  .delivery,
-  .footer-social,
-  .footer-normal {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .intro h1 {
-    font-size: 2rem;
-    width: 100%;
-  }
-  .intro p {
-    width: 100%;
-  }
-  .menu-items li {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-  .location {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .reservation-form {
-    width: 90%;
-  }
-  .imgsep {
-    height: 60vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
